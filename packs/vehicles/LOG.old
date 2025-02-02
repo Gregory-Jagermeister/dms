@@ -1,3 +1,6 @@
-2024/11/09-16:17:44.232 181c Recovering log #322
-2024/11/09-16:17:44.238 181c Delete type=0 #322
-2024/11/09-16:17:44.238 181c Delete type=3 #321
+2024/11/10-11:29:48.326 e0b0 Recovering log #324
+2024/11/10-11:29:48.327 e0b0 Level-0 table #326: started
+2024/11/10-11:29:48.337 e0b0 Level-0 table #326: 203719 bytes OK
+2024/11/10-11:29:48.344 e0b0 Delete type=0 #324
+2024/11/10-11:29:48.345 e0b0 Delete type=3 #323
+2024/11/10-11:29:48.675 ad88 Moved #326 to level-1 203719 bytes OK: files[ 0 1 1 0 0 0 0 ]
