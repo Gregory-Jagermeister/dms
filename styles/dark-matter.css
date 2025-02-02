@@ -1,0 +1,354 @@
+/* Systems Table Container */
+.systems-table {
+}
+
+.systems {
+}
+
+/* Systems and Upgrades List */
+.systems-list {
+    list-style-type: none;
+    padding: 0 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Individual List Item Styling */
+.systems-list li {
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.systems-list li:nth-child(4n-1) {
+  background-color: rgba(207, 207, 207, 0.05);
+}
+
+.systems-list li:nth-child(4n-2) {
+  background-color: rgba(207, 207, 207, 0.05);
+}
+
+/* Hide default checkbox */
+.systems-list input[type="checkbox"] {
+    display: none;
+}
+
+/* Label Styling */
+.systems-list label {
+    color: #78cce2;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    padding-left: 35px; /* Space for custom checkbox */
+}
+
+/* Custom Checkbox Style */
+.systems-list label::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border: 2px solid #78cce2; /* Sci-Fi Theme Border */
+    border-radius: 50%; /* Circular Shape */
+    display: inline-block;
+    margin-right: 10px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    position: absolute;
+    left: 0;
+}
+
+.systems-list input[type="checkbox"]:checked + label::before {
+    background-color: #78cce2; /* Sci-Fi Theme Fill Color */
+    box-shadow: 0 0 15px 2px rgba(0, 255, 255, 0.6); /* Sci-Fi Theme Glow */
+}
+
+/* Responsive Design: Full Width on Smaller Screens */
+@media (max-width: 600px) {
+    .systems-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+.dms .crew-list{
+  flex-grow: 1;
+  padding: 0 5px;
+  padding-bottom: 10px;
+}
+
+.crew-role.drag-over {
+    border: 2px dashed #4e7988;
+    background-color: #306d7c;
+  }
+
+  .crew-roles-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+  }
+  
+  .crew-role {
+    flex: 0 0 150px;  /* Fixed width */
+    border:  2px solid #4e7988;
+    border-radius: 8px;
+    padding: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: grab;
+  }
+  
+  .crew-role:active {
+    cursor: grabbing;
+  }
+  
+  .role-label {
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .role-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .role-img-container {
+    position: relative;
+    width: 80px;     /* Limit the size of the image */
+    height: 80px;
+    overflow: hidden;
+    margin-bottom: 8px;
+  }
+  
+  .role-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .role-img-container.empty-role {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #4e7988;
+    border-radius: 50%;
+  }
+  
+  .remove-role {
+    background: none;
+    border: none;
+    color: #c00;
+    cursor: pointer;
+  }
+  
+  .remove-role:hover {
+    color: #900;
+  }
+
+  .dms {
+
+  }
+
+  .dms.sheet .window-content {
+    margin-top: -30px;
+    padding-top: 30px;
+    border-radius: 5px;
+    background: #005066c5;
+    border-color: #78cce2;
+  }
+
+  .dms .window-header{
+    z-index: 1;
+  }
+
+  .dms.sheet .tag {
+    color: #78cce2;
+    border-color: #4e7988;
+  }
+
+  .dms .form-group label{
+    color: #78cce2;
+  }
+  .dms.sheet.actor .counters{
+    border-bottom: 2px solid #4e7988;
+  }
+
+  .dms.sheet.actor .counters .counter h4{
+    color: #78cce2;
+  }
+
+  .dms.sheet .trait-selector {
+    color: #78cce2;
+  }
+
+  .dms.sheet.actor .traits i.fas{
+    color: #78cce2;
+  }
+
+  .dms input[type="text"], .dms input[type="number"], .dms select{
+    color: #78cce2;
+    border-color: #4e7988;
+  }
+
+  .dms input[type="text"]:hover, .dms input[type="number"]:hover, .dms input[type="checkbox"]:hover, .dms input[type="text"]:focus, .dms input[type="number"]:focus, .dms input[type="checkbox"]:focus{
+    border: 1px solid #4e7988;
+    box-shadow: 0 0 8px #78cce2;
+  }
+
+  .dms.sheet .sheet-header {
+    border-bottom: 2px solid #4e7988;
+  }
+
+  .dms.sheet .sheet-header img.profile {
+    border-right: 2px solid #4e7988;
+  }
+
+  .dms.sheet .sheet-header .summary{
+    border-top: 2px solid #4e7988;
+  }
+
+  .dms.sheet.actor .sheet-header .summary{
+    border-bottom: 2px solid #4e7988;
+  }
+
+  .dms.sheet .sheet-header .summary li {
+    border-right: 2px solid #4e7988;
+    color: #78cce2;
+  }
+
+  .dms.sheet.actor h4.box-title  {
+    color: #78cce2;
+  }
+
+  .dms.sheet.actor .sheet-header .attributes .attribute{
+    border-right: 2px solid #4e7988;
+    color: #78cce2;
+  }
+
+  .dms.sheet.actor h4.box-title {
+    border-bottom: 2px solid #4e7988;
+  }
+
+  .dms option, optgroup {
+    font-family: inherit;
+    background: #005066;
+  }
+
+  .dms select:focus {
+    box-shadow: 0 0 5px #78cce2;
+    outline: none;
+  }
+
+  .dms.sheet ::placeholder {
+    color: #78cde28c;
+  }
+
+  .dms.sheet .sheet-navigation .item.active {
+    border-bottom: 3px solid #78cce2;
+  }
+
+  .dms.sheet .sheet-body {
+    color:#78cce2;
+  }
+
+  .dms.sheet .sheet-navigation .item {
+    border-bottom: 2px solid #4e7988;
+    color: #78cce2;
+  }
+
+  .dms .inventory-element .inventory-list .item .item-name h4 {
+    color: #78cce2;
+  }
+  .dms .items-list .items-header{
+    color: #78cce2;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 5px 0px -2px #24242442;
+  }
+
+  .dms .inventory-element .inventory-list .item-detail {
+    border-inline-end: 2px solid #4e7988;
+    color: #78cce2;
+  }
+
+  .dms .inventory-element .inventory-list .item-summary {
+    color: #78cce2;
+    border-top: 1px solid #4e7988;
+  }
+
+  .dms.sheet.actor.vehicle .features .item-controls{
+    color: #78cce2;
+  }
+
+  .dms.sheet.actor.vehicle .features .item-controls .item-toggle, .dms.sheet.actor.vehicle .features .item-controls [data-action="crew"]{
+    color: #306d7c;
+  }
+
+  .dms.sheet.actor.vehicle .features .item-controls .item-toggle.active, .dms.sheet.actor.vehicle .features .item-controls [data-action="crew"].active{
+    color: #78cce2;
+  }
+
+  .dms .items-list .item {
+    border-bottom: 2px solid #4e7988;
+  }
+
+  .dms .inventory-element .inventory-header .currency input[type="text"], .dms .inventory-element .inventory-filters .currency input[type="text"], .dms .inventory-element .inventory-header .currency input[type="number"], .dms .inventory-element .inventory-filters .currency input[type="number"] {
+    border: 2px solid #4e7988;
+  }
+
+  .dms .inventory-element .inventory-header .currency label, .dms .inventory-element .inventory-filters .currency label{
+    color: #78cde28c;
+  }
+
+  .dms .inventory-element .inventory-list .item-weight {
+    border-inline-start: 2px solid #4e7988;
+  }
+
+  .dms .effects-element .effect-source, .dms .effects-element .effect-duration, .dms .effects-element .effect-controls{
+    border-inline: 1px solid #4e7988;
+    color: #78cde28c;
+  }
+
+  .dms * {
+    scrollbar-width: thin;
+    scrollbar-color: #4e7988 var(--color-scrollbar-track);
+  }
+
+  .dms a.content-link, .dms a.inline-roll{
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  .dms button {
+    border:1px solid #4e7988;
+  }
+
+  /* TOKEN HUD */
+  .shield-button { position: absolute; }
+  .shield-button.front { top: -70px; left: calc(50% - 20px); }
+  .shield-button.left { top: calc(50% - 20px); left: -120px; }
+  .shield-button.back { top: calc(100% + 56px); left: calc(50% - 20px); }
+  .shield-button.right { top: calc(50% - 20px); left: calc(100% + 68px); z-index: -1;}
+
+  .shield-text {
+    text-align: center;
+    border-radius: 3px;
+    background: var(--dnd5e-background-5);
+    padding: 0.25rem;
+    line-height: normal;
+    flex: auto;
+    margin: 0px 0px 5px 0px;;
+    border: 1px solid var(--color-border-light-2);
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed';
+    font-weight: 600;
+  }

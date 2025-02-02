@@ -1,0 +1,205 @@
+{
+  "id": "dms",
+  "title": "Dark Matter Ships",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {}
+      }
+    ],
+    "requires": [
+      {
+        "id": "lib-wrapper",
+        "type": "module",
+        "compatibility": {
+          "minimum": "1.0.0.0",
+          "verified": "1.12.6.0"
+        }
+      }
+    ]
+  },
+  "authors": [
+    {
+      "name": "Daniel Stirba",
+      "discord": "gregory_jagermeister",
+      "flags": {}
+    }
+  ],
+  "esmodules": [
+    "scripts/main.js"
+  ],
+  "styles": [
+    "styles/dark-matter.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json",
+      "flags": {}
+    }
+  ],
+  "packs": [
+    {
+      "name": "classes-dark-matter",
+      "label": "Dark Matter Classes",
+      "path": "packs/classes-dark-matter",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "rule-book-dark-matter",
+      "label": "Dark Matter Rules",
+      "path": "packs/rule-book-dark-matter",
+      "type": "JournalEntry",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "subclasses-dark-matter",
+      "label": "Dark Matter Subclasses",
+      "path": "packs/subclasses-dark-matter",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "races-dark-matter",
+      "label": "Dark Matter Races",
+      "path": "packs/races-dark-matter",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "actions-dark-matter",
+      "label": "Actions Dark Matter",
+      "path": "packs/actions-dark-matter",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "backgrounds-dark-matter",
+      "label": "Backgrounds Dark Matter",
+      "path": "packs/backgrounds-dark-matter",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e"
+    },
+    {
+      "name": "feats-dark-matter",
+      "label": "Feats Dark Matter",
+      "path": "packs/feats-dark-matter",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e"
+    },
+    {
+      "name": "fighting-styles-dark-matter",
+      "label": "Fighting styles Dark Matter",
+      "path": "packs/fighting-styles-dark-matter",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e"
+    },
+    {
+      "name": "items-dark-matter",
+      "label": "Items Dark Matter",
+      "path": "packs/items-dark-matter",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e"
+    },
+    {
+      "name": "monster-features-dark-matter",
+      "label": "Monster features Dark Matter",
+      "path": "packs/monster-features-dark-matter",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e"
+    },
+    {
+      "name": "monsters-dark-matter",
+      "label": "Monsters Dark Matter",
+      "path": "packs/monsters-dark-matter",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e"
+    },
+    {
+      "name": "spells-dark-matter",
+      "label": "Spells Dark Matter",
+      "path": "packs/spells-dark-matter",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e"
+    },
+    {
+      "name": "tables-dark-matter",
+      "label": "Tables Dark Matter",
+      "path": "packs/tables-dark-matter",
+      "type": "RollTable",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e"
+    },
+    {
+      "name": "vehicles",
+      "label": "Vehicles",
+      "path": "packs/vehicles",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e"
+    }
+  ]
+}
