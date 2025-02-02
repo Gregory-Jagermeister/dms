@@ -44,7 +44,7 @@ export function applyProperties() {
     CONFIG.DND5E.languages.standard.children.skathari = 'Skathári';
     CONFIG.DND5E.languages.standard.children.wrothian = 'Wrothian';
 
-    //CONFIG.DND5E.senses.thermalsight = "Thermalsight";
+    //CONFIG.DND5E.senses.thermalsight = 'Thermalsight';
 
     CONFIG.DND5E.equipmentTypes.grafts = 'Construct Grafts';
     CONFIG.DND5E.miscEquipmentTypes.grafts = 'Constructs Grafts';
