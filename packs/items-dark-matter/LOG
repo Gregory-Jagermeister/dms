@@ -1,3 +1,9 @@
-2025/02/02-16:34:05.193 9a24 Recovering log #341
-2025/02/02-16:34:05.198 9a24 Delete type=0 #341
-2025/02/02-16:34:05.198 9a24 Delete type=3 #340
+2025/02/04-20:03:19.988 c884 Recovering log #346
+2025/02/04-20:03:19.993 c884 Delete type=0 #346
+2025/02/04-20:03:19.993 c884 Delete type=3 #344
+2025/02/04-20:43:28.815 bfac Compacting 1@1 + 1@2 files
+2025/02/04-20:43:28.826 bfac Generated table #349@1: 415 keys, 528915 bytes
+2025/02/04-20:43:28.826 bfac Compacted 1@1 + 1@2 files => 528915 bytes
+2025/02/04-20:43:28.829 bfac compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/02/04-20:43:28.829 bfac Delete type=2 #295
+2025/02/04-20:43:28.829 bfac Delete type=2 #345
